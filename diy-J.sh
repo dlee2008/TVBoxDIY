@@ -40,10 +40,6 @@ mv $CURRENT_DIR/DIY/app_bg.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_b
 #sed -i 's/mContext, 300/mContext, 400/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/adapter/GridAdapter.java
 #sed -i 's/mContext, 400/mContext, 500/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/adapter/HistoryAdapter.java
 #sed -i 's/mContext, 300/mContext, 400/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/adapter/HistoryAdapter.java
-#添加网速显示
-#mv $CURRENT_DIR/DIY/BaseController.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/player/controller/BaseController.java
-#mv $CURRENT_DIR/DIY/player_vod_control_view.xml $CURRENT_DIR/$DIR//app/src/main/res/layout/player_vod_control_view.xml
-#mv $CURRENT_DIR/DIY/player_live_control_view.xml $CURRENT_DIR/$DIR//app/src/main/res/layout/player_live_control_view.xml
 #添加PY支持
 wget --no-check-certificate -qO- "https://raw.githubusercontent.com/UndCover/PyramidStore/main/aar/pyramid-1011.aar" -O $CURRENT_DIR/$DIR/app/libs/pyramid.aar
 sed -i "/thunder.jar/a\    implementation files('libs@pyramid.aar')" $CURRENT_DIR/$DIR/app/build.gradle
