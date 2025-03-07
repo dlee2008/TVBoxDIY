@@ -25,7 +25,7 @@ echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 #名称修改
 sed -i 's/TVBox/极影视/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
 #版本号修改
-sed -i 's/\.concat(buildTime())/ +\"${{ env.tag }}\"/g' $CURRENT_DIR/$DIR/app/build.gradle 
+#sed -i 's/\.concat(buildTime())/ +\"${{ env.tag }}\"/g' $CURRENT_DIR/$DIR/app/build.gradle 
 #图标修改
 #cp $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-hdpi/app_icon.png
 #cp $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xhdpi/app_icon.png
